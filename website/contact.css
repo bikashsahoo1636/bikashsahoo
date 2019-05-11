@@ -1,0 +1,209 @@
+html{
+    box-sizing:border-box;
+}
+body{
+    font-family: 'Indie Flower', sans-serif,bold;
+    overflow: hidden;
+    background:url(bg2.jpeg);
+    height: 100vh;
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -webkit-transform: translate3d(0,0,0);
+}
+.title,.fun{
+	display: inline-block;
+	white-space: nowrap;
+	font-family: 'Righteous';
+    -webkit-font-smoothing: antialiased;
+    overflow: hidden;
+    position:relative;
+    font-weight:bold;
+    line-height: 4;
+    color:#000;
+    font-size:47px;
+    text-align: center;
+}
+.title{
+	animation: showup 7s infinite;
+}
+.fun{
+	width:0px;
+    animation: reveal 7s infinite;
+}
+.fun: span {
+	margin-left:-581px;
+  animation: slidein 7s infinite;
+}
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100% {opacity:0;}
+}
+
+@keyframes slidein {
+    0% { margin-left:-800px; }
+    20% { margin-left:-800px; }
+    35% { margin-left:0px; }
+    100% { margin-left:0px; }
+}
+
+@keyframes reveal {
+    0% {opacity:0;width:0px;}
+    20% {opacity:1;width:0px;}
+    30% {width:581px;}
+    80% {opacity:1;}
+    100% {opacity:0;width:581px;}
+}
+.material-icons{
+    font-size: 48px;
+    transform: translate(-10%,25%);
+}
+nav { 
+    position:relative;
+    align-items: center;
+    justify-content: space-around;
+    padding:0;
+    width: 100%;
+    background: transparent;
+}
+nav ul{
+	float: right;
+	list-style-type: none; 
+	margin-top: 20px;
+	line-height: 3;
+}
+nav ul li 
+{
+	display: inline-block;
+	font-size: 48px;
+	animation-delay: 1s;
+    animation: skew 12s linear infinite 0s;
+    -webkit-animation: skew 12s linear infinite 0s;
+}
+nav ul li a{
+	text-decoration: none;
+	color: #000;
+	padding: 10px 10px;
+	margin : 0 10px;
+	border: 1px solid transparent;
+	transition:0.6s ease;
+}
+nav ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 0;
+    content: ' ';
+    color: transparent;
+    background:  #000;
+    height: 1px;
+    text-align: center;
+    opacity: 0;
+}
+@keyframes skew {
+    0% {
+        opacity: 1;
+        transform:  rotate(0turn);
+    }
+    10% {
+        opacity: 1
+        transform:  rotate(0.25turn);
+    }
+    50% {
+        opacity: 1;
+        transform:  rotate(0.50turn);
+    }
+    60% {
+        opacity: 1;
+        transform:  rotate(0.75turn);
+    }
+    100% {
+        opacity: 1;
+        transform:  rotate(1turn);
+    }
+}
+nav ul li a:hover{
+	background-color: #000;
+	color: #fff;
+}
+nav ul li a:hover:after{
+	background-color: #000;
+    opacity: 1;
+}
+.threeD {
+  color: darkgrey;
+  white-space: nowrap;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  font-family: "Finger Paint";
+  letter-spacing: 0.1em;
+  transition: 0.3s;
+  text-shadow: 1px 1px 0 black, 1px 2px 0 black, 1px 3px 0 black, 1px 4px 0 black,
+    1px 5px 0 black, 1px 6px 0 black, 1px 7px 0 black, 1px 8px 0 black,
+    5px 13px 15px black;
+}
+
+.threeD:hover {
+  transition: 0.3s;
+  transform: scale(1.1)translate(-50%, -50%);
+  text-shadow: 1px -1px 0 black, 1px -2px 0 black, 1px -3px 0 black,
+    1px -4px 0 black, 1px -5px 0 black, 1px -6px 0 black, 1px -7px 0 black,
+    1px -8px 0 black, 5px -13px 15px black, 5px -13px 25px black;
+}
+.contact{
+	font-family: "Finger Paint";
+	margin-top: 180px;
+	margin-left: 560px;
+	text-align: left;
+	font-size: 50px;
+}
+.script {
+  font-family: "Seaweed Script";
+  color: #000;
+  text-align: center;
+  font-size: 40px;
+  position: relative;
+  margin:0;
+}
+.script span {
+  background-color: #222;
+  padding: 0 0.3em;
+}
+.script:before {
+  content:"";
+  display: block;
+  position: absolute;
+  z-index:-1;
+  top: 50%;
+  width: 100%;
+  border-bottom: 3px solid #000;
+}
+p{
+	color: #a9a9a9;
+	font-family: Arvo;
+  	font-weight: bold;
+	font-size: 30px;
+	text-shadow:
+    -3px -3px 0 #222,
+    3px -3px 0 #222,
+    -3px 3px 0 #222,
+    3px 3px 0 #222;
+  line-height: 3;
+  letter-spacing: 0.1em;
+  margin:0;
+  text-align: center;
+}
+.box {
+	display: table;
+	margin:0 auto;
+}
+.list li{
+	margin-right: 200px;
+	line-height: 0.5;
+}
+
