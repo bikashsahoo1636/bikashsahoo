@@ -44,7 +44,7 @@ body{
     font-weight:bold;
     color:#fff;
     float: left;
-    font-size:4vw;
+    font-size:3vw;
     top:6%;
     left :4%;
     line-height: 13vh;
@@ -69,7 +69,7 @@ body{
     font-weight:bold;
     color:#fff;
     text-align:left;
-    font-size:2.8vw;
+    font-size:1.76vw;
     bottom: 44%;
     left :3%;
     animation: typing 3.5s steps(40, end);
